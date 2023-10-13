@@ -1,14 +1,18 @@
 #include "Product.h"
 #include <regex>
 
-Product::Product(uint16_t id, const std::string& name, float price, uint16_t vat, std::string expirationDate)
-	: m_id{ id }, m_name{ name }, m_price{ price }, m_vat{ vat }, m_expirationDate{ expirationDate }
+Product::Product(uint16_t id, const std::string& name, float price)
+	: m_id{ id }, m_name{ name }, m_price{ price } //se poate pune si cu ()
 {
 	//m_expirationDateOrType = expirationDate;
 }
 
-Product::Product(uint16_t id, const std::string& name, float price, uint16_t vat, ProductType type)
-	: m_id{ id }, m_name{ name }, m_price{ price }, m_vat{ vat }, m_type{type}
+std::string Product::GetName() const
 {
-	//m_expirationDateOrType = type;
+	return m_name;
+}
+
+float Product::GetPriceWithTVA() const
+{
+	return m_price+m_price*GetVAT()/100;
 }
