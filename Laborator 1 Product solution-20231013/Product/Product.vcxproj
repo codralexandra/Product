@@ -128,11 +128,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="NonperishableProduct.cpp" />
+    <ClCompile Include="PerishableProduct.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="ProductType.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="IPriceable.h" />
+    <ClInclude Include="NonperishableProduct.h" />
+    <ClInclude Include="PerishableProduct.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ProductType.h" />
   </ItemGroup>

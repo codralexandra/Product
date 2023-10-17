@@ -24,12 +24,27 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PerishableProduct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NonperishableProduct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Product.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ProductType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PerishableProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NonperishableProduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IPriceable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
