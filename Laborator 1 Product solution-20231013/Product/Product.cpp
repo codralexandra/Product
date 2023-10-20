@@ -14,5 +14,12 @@ std::string Product::GetName() const
 
 float Product::GetPriceWithTVA() const
 {
-	return m_price+m_price*GetVAT()/100;
+	return m_price + m_price * GetVAT() / 100;
+}
+
+std::ostream& operator<<(std::ostream& out, const Product& product)
+{
+	return out << product.m_id << " " << product.GetName() << " " << product.m_price << " "<<
+		product.GetVAT()<<"\n";
+	//daca facem getteri pt toate campurile putem sa nu mai facem functia friend (se pastreaza incapsularea)
 }

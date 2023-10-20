@@ -4,3 +4,8 @@ PerishableProduct::PerishableProduct(uint16_t id, const std::string& name, float
 	:Product(id,name,price), m_date(date)
 {
 }
+
+uint16_t PerishableProduct::GetVAT() const
+{
+	return PerishableProduct::kVAT;
+}

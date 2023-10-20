@@ -6,17 +6,20 @@ ProductType ParseProductType(const std::string& str)
 	{
 		return ProductType::Clothing;
 	}
-	else if (str == "PersonalHygiene")
+
+	if (str == "PersonalHygiene")
 	{
 		return ProductType::PersonalHygiene;
 	}
-	else if (str == "SmallAppliences")
+	
+	if (str == "SmallAppliences")
 	{
 		return ProductType::SmallAppliences;
 	}
 	else
 	{
 		throw std::exception{ "Unknown product type" };
+		//programul va reactiona la fel ca si cum ar primi o eroare de la c++
 	}
 }
 

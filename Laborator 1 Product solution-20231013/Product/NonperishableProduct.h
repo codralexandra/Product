@@ -5,6 +5,7 @@ class NonperishableProduct : public Product
 {
 public:
 	NonperishableProduct(uint16_t id, const std::string& name, float price, ProductType type);
+	uint16_t GetVAT() const override;
 private:
 	ProductType m_type;
 	static const uint16_t kVAT = 19;

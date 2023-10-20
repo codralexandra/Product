@@ -4,3 +4,8 @@ NonperishableProduct::NonperishableProduct(uint16_t id, const std::string& name,
 	:Product(id,name,price), m_type(type)
 {
 }
+
+uint16_t NonperishableProduct::GetVAT() const
+{
+	return NonperishableProduct::kVAT;
+}
